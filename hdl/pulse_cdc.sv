@@ -5,10 +5,10 @@ module pulse_cdc(
   output  logic o_pulse_bclk,
   input   logic i_bclk 
 );
-  logic pulse_toggle_aclk = 1'b0;
-  logic pulse_toggle_cdc;
-  logic pulse_toggle_bclk;
-  logic pulse_toggle_prev_bclk;
+  logic pulse_toggle_aclk       = 1'b0;
+  logic pulse_toggle_cdc        = 1'b0;
+  logic pulse_toggle_bclk       = 1'b0;
+  logic pulse_toggle_prev_bclk  = 1'b0;
 
   // i_aclk domain
   always @(posedge i_aclk) begin
