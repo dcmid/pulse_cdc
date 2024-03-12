@@ -48,7 +48,6 @@ module pulse_cdc_tb;
     @(posedge bclk)
     @(posedge bclk)
     assert (pulse_bclk == 1'b0);
-    $display(pulse_bclk);
     repeat(4) @(posedge bclk);
     $finish(2);
   end
